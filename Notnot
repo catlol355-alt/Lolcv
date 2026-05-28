@@ -22,7 +22,7 @@
 </head>
 <body>
 
-  <img id="gambar" src="foto1.jpg">
+  <img id="gambar" src="qrcode_355738125_2eed0a64353a0ec41460e599321c7756.png">
 
   <script>
     const params = new URLSearchParams(window.location.search);
