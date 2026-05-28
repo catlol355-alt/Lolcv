@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      background:#111;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      margin:0;
+    }
+
+    img{
+      width:300px;
+      border-radius:15px;
+      box-shadow:0 0 20px #000;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="gambar" src="foto1.jpg">
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nama = params.get("img");
+
+    if(nama){
+      document.getElementById("gambar").src = nama;
+    }
+  </script>
+
+</body>
+</html>
